@@ -837,3 +837,11 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 432ms (Views: 416.5ms | ActiveRecord: 0.9ms)
 
 
+Started GET "/posts/new" for 108.46.152.116 at 2020-06-16 08:03:13 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 194ms (Views: 179.2ms | ActiveRecord: 0.7ms)
+
+
