@@ -946,3 +946,13 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 213ms (Views: 203.6ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/posts/2" for 108.46.152.116 at 2020-06-16 08:05:33 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 271ms (Views: 256.8ms | ActiveRecord: 0.6ms)
+
+
