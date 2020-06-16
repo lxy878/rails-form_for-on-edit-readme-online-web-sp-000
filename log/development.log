@@ -895,3 +895,13 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 214ms (Views: 199.5ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/posts/2/edit" for 108.46.152.116 at 2020-06-16 08:03:59 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 221ms (Views: 206.9ms | ActiveRecord: 0.6ms)
+
+
